@@ -12,7 +12,7 @@ const PublicPortfolio = () => {
     // Database se data mangwana
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/portfolio/${username}`);
+        const res = await axios.get(`/api/portfolio/${username}`);
         setData(res.data);
       } catch (error) {
         console.error("Error fetching portfolio", error);
