@@ -19,7 +19,7 @@ const Login = () => {
       localStorage.setItem('user', JSON.stringify(res.data.user));
 
       alert('Login Successful! 🔓');
-      navigate('/');
+      navigate('/editor');
     } catch (err) {
       console.error(err);
       alert(err.response?.data?.msg || "Login Failed");

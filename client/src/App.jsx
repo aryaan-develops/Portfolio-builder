@@ -146,12 +146,13 @@ function App() {
       <Route path="/register" element={<Register />} />
       
       {/* Protected Editor Route */}
-      <Route path="/" element={<EditorPage />} />
+      <Route path="/" element={<About />} />
+      <Route path="/editor" element={<EditorPage />} />
       
       {/* Public Portfolio Route */}
       <Route path="/p/:username" element={<PublicPortfolio />} />
       
-      <Route path="/about" element={<About />} />
+     
     </Routes>
 
   );
